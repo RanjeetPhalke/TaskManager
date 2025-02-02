@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4AB1FF, #979aa7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #f1f3f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 700px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.task-input, .controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.task-input input, .task-input select, .controls select, .controls input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.task-input button, .controls button {
+    background: #2c1425;
+    color: rgb(235, 239, 241);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.clear-btn {
+    background: #d28080;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: #2c1425;
+    color: white;
+}
+
+.actions button {
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.actions .edit {
+    background: #FFA500;
+    color: white;
+}
+
+.actions .delete {
+    background: #FF3B3B;
+    color: white;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}

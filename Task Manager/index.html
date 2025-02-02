@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="icon" type="image/webp" href="logo.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Task Manager</h2>
+        
+        <!-- Task Input Section -->
+        <div class="task-input">
+            <input type="text" id="taskName" placeholder="Enter Task" aria-label="Task Name">
+            <select id="priority" aria-label="Priority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <input type="date" id="taskDate" aria-label="Task Date">
+            <input type="time" id="taskTime" aria-label="Task Time">
+            <input type="text" id="taskRemark" placeholder="Additional Notes" aria-label="Remark">
+            <button id="addTask">Add Task</button>
+        </div>
+        
+        <!-- Filter Controls Section -->
+        <div class="controls">
+            <button class="clear-btn">Clear All Tasks</button>
+            <select id="filterPriority" aria-label="Filter by Priority">
+                <option value="All">All</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <input type="date" id="filterDate" aria-label="Filter by Date">
+            <button id="applyFilters">Apply Filters</button>
+        </div>
+
+        <!-- Task Table Section -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Complete</th>
+                    <th>Task</th>
+                    <th>Priority</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Remark</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="task-box">
+                <!-- Tasks will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
